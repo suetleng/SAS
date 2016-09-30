@@ -1,0 +1,13 @@
+%let datadir = /folders/myfolders;
+data new;
+set  "&datadir./dataset/comb_sample_lastobs_vld";
+status=0;
+if y_prepay=1 then status=2;
+if y_Def=1 then status=1;
+
+* standarize variables;
+if 0<dti<=20  then x_dti=1;
+if 20<dti<=30  then x_dti=2;
+if 30<dti<=40  then x_dti=3;
+if 40<dti<=50  then x_dti=4;
+if 50<dti<=65  then x_dti=5;
