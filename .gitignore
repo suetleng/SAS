@@ -11,3 +11,4 @@ if 20<dti<=30  then x_dti=2;
 if 30<dti<=40  then x_dti=3;
 if 40<dti<=50  then x_dti=4;
 if 50<dti<=65  then x_dti=5;
+
